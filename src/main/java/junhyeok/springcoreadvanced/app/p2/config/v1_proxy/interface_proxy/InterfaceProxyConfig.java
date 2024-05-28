@@ -1,4 +1,4 @@
-package junhyeok.springcoreadvanced.app.p2.config;
+package junhyeok.springcoreadvanced.app.p2.config.v1_proxy.interface_proxy;
 
 import junhyeok.springcoreadvanced.app.p2.v1.*;
 import junhyeok.springcoreadvanced.app.p2.config.v1_proxy.interface_proxy.OrderControllerInterfaceProxy;

@@ -1,4 +1,4 @@
-package junhyeok.springcoreadvanced.app.p2.config;
+package junhyeok.springcoreadvanced.app.p2.config.v1_proxy.concrete_proxy;
 
 import junhyeok.springcoreadvanced.app.p2.config.v1_proxy.concrete_proxy.OrderControllerConcreteProxy;
 import junhyeok.springcoreadvanced.app.p2.config.v1_proxy.concrete_proxy.OrderRepositoryConcreteProxy;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConcreteProxyConfig {
     @Bean
-    public OrderController2V2 orderController2V1(LogTrace logTrace){
+    public OrderController2V2 orderController2V2(LogTrace logTrace){
         OrderController2V2 controllerImpl = new OrderController2V2(orderService2V2(logTrace));
         return new OrderControllerConcreteProxy(controllerImpl, logTrace);
     }
