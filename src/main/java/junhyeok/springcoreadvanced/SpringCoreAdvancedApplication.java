@@ -2,6 +2,7 @@ package junhyeok.springcoreadvanced;
 
 import junhyeok.springcoreadvanced.p2.config.v4_postprocessor.BeanPostProcessorConfig;
 import junhyeok.springcoreadvanced.p2.config.v5_autoproxy.AutoProxyConfig;
+import junhyeok.springcoreadvanced.p2.config.v6_aop.AopConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
@@ -11,7 +12,8 @@ import org.springframework.context.annotation.Import;
 //@Import({DynamicProxyFilterConfig.class})
 //@Import({ProxyFactoryConfigV1.class, ProxyFactoryConfigV2.class})
 //@Import(BeanPostProcessorConfig.class)
-@Import(AutoProxyConfig.class)
+//@Import(AutoProxyConfig.class)
+@Import(AopConfig.class)
 @SpringBootApplication(scanBasePackages = {"junhyeok.springcoreadvanced.p1","junhyeok.springcoreadvanced.trace", "junhyeok.springcoreadvanced.p2.app.v3"})
 public class SpringCoreAdvancedApplication {
 
